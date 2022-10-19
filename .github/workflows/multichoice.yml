@@ -14,28 +14,28 @@ on:
 
       data_5K:
         type: boolean
-        description: whether to add or not
+        description: data_5K
       data_10K:
         type: boolean
-        description: whether to add or not
+        description: data_10K
       data_15K:
         type: boolean
-        description: whether to add or not
+        description: data_15K
       data_20K:
         type: boolean
-        description: whether to add or not
+        description: data_20K
       data_30K:
         type: boolean
-        description: whether to add or not
+        description: data_30K
       data_100K:
         type: boolean
-        description: whether to add or not
+        description: data_100K
       data_500K:
         type: boolean
-        description: whether to add or not
+        description: data_500K
       data_750K:
         type: boolean
-        description: whether to add or not
+        description: data_750K
 
 
 
