@@ -29,9 +29,6 @@ on:
           - data_500K
           - data_750K
 
-      environment:
-        type: environment
-        description: Select the environment
       boolean:
         type: boolean
         description: data_5k
