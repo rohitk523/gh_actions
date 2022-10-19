@@ -8,4 +8,14 @@ args = parser.parse_args()
 
 print(args.data)
 
-print(args.data[0].split(","))
+list_to_dict= args.data[0].split(",")
+
+def Convert(lst):
+    res_dct = {lst[i]: lst[i + 1] for i in range(0, len(lst), 2)}
+    return res_dct
+
+
+# Driver code
+
+print(Convert(list_to_dict))
+
