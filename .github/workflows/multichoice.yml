@@ -12,26 +12,32 @@ on:
         - p1
         - test
 
-      data:
-        # Friendly description to be shown in the UI instead of 'name'
-        description: 'Data'
-        # Default value if no value is explicitly provided
-        default: 'select the folder to upload the data'
-        # Input has to be provided for the workflow to run
-        required: true
-        type: choice
-        options:
-          - data_5K
-          - data_10K
-          - data_15K
-          - data_20K
-          - data_30K
-          - data_500K
-          - data_750K
-
       data_5K:
         type: boolean
-        description: data_5K
+        description: whether to add or not
+      data_10K:
+        type: boolean
+        description: whether to add or not
+      data_15K:
+        type: boolean
+        description: whether to add or not
+      data_20K:
+        type: boolean
+        description: whether to add or not
+      data_30K:
+        type: boolean
+        description: whether to add or not
+      data_100K:
+        type: boolean
+        description: whether to add or not
+      data_500K:
+        type: boolean
+        description: whether to add or not
+      data_750K:
+        type: boolean
+        description: whether to add or not
+
+
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -55,9 +61,19 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        if: ${{ github.event.inputs.data_5K == 'true' }}
+        if: ${{ github.event.inputs.data_5K == 'true' }} or ${{ github.event.inputs.data_10K == 'true' }}
         run: |
-          echo "data_5K" ${{ github.event.inputs.data_5K }}
+          echo "data_5K"
+          echo "data_10K"
+          echo "data_15K"
+          echo "data_20K"
+          echo "data_30K"
+          echo "data_100K"
+          echo "data_500K"
+          echo "data_750K"
+          
+          
+          
         
       
 
