@@ -63,8 +63,8 @@ jobs:
       - name: Run a multi-line script
         if: ${{ github.event.inputs.data_5K == 'true' }} or ${{ github.event.inputs.data_10K == 'true' }}
         run: |
-          echo "data_5K"
-          echo "data_10K"
+          echo "data_5K"  ${{ github.event.inputs.data_5K }}
+          echo "data_10K" ${{ github.event.inputs.data_10K }}
           echo "data_15K"
           echo "data_20K"
           echo "data_30K"
