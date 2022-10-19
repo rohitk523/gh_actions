@@ -29,9 +29,9 @@ on:
           - data_500K
           - data_750K
 
-      data_5k:
+      data_5K:
         type: boolean
-        description: data_5k or not
+        description: data_5K
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -55,7 +55,7 @@ jobs:
         run: |
           echo ${{ inputs.instance }},
           echo ${{ inputs.data }},
-          echo ${{ inputs.boolean }},
+          echo ${{ inputs.data_5K }},
       
 
 
