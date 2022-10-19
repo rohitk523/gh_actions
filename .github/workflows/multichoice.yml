@@ -55,7 +55,7 @@ jobs:
         run: |
           echo ${{ inputs.instance }},
           echo ${{ inputs.data }},
-          echo ${{ inputs.data_5K }},
+          echo ${{ inputs.data_5K.description }},
       
 
 
