@@ -57,7 +57,7 @@ jobs:
       - name: Run a multi-line script
         if: ${{ github.event.inputs.data_5K }}
         run: |
-          echo "data_5K"
+          echo "data_5K" ${{ github.event.inputs.data_5K }}
         
       
 
