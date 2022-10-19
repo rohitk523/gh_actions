@@ -34,14 +34,8 @@ on:
         description: Select the environment
       boolean:
         type: boolean
-        description: True or False
-      choice:
-        type: choice
-        description: Make a choice
-        options:
-          - foo
-          - bar
-          - baz
+        description: data_5k
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -62,7 +56,8 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo ${{ inputs.instance }},
-          echo ${{ inputs.data }}.
+          echo ${{ inputs.data }},
+          echo ${{ inputs.boolean }},
       
 
 
