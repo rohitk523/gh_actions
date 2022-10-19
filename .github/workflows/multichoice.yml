@@ -30,7 +30,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo ${{ inputs.name }},
+          echo ${{ inputs.instance }},
           echo test, and deploy your project.
       
 
