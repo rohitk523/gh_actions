@@ -1,14 +1,16 @@
 on:
   workflow_dispatch:
     inputs:
-      name:
-        type: multi-choice
-        description: select packages
+      instance:
+        default: d1
+        required: True
+        type: choice
+        description: Select the instance
         options:
-        - go-service1
-        - go-service2
-        - py-service1
-
+        - d1
+        - s1
+        - p1
+        - test
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
