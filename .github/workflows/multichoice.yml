@@ -77,7 +77,7 @@ jobs:
 
       - id: execution
         name: Execution of python file
-        run: python main.py --data=["data_5K", github.event.inputs.data_5K]
+        run: python main.py --data=["data_5K", ${{ github.event.inputs.data_5K }}]
         shell: bash
           
           
