@@ -18,4 +18,9 @@ def Convert(lst):
 # Driver code
 
 print(Convert(list_to_dict))
+def true_list(lst):
+    res_list = [i for i in range(0,len(lst), 2)]
+    return res_list
+
+print(true_list(list_to_dict))
 
