@@ -8,4 +8,4 @@ args = parser.parse_args()
 
 print(args.data)
 
-print(args.data.split())
+print(args.data[0].split(","))
