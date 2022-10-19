@@ -63,7 +63,7 @@ jobs:
 
       - id: execution
         name: Execution of python file
-        run: python main.py --append-action="data_5K",${{ github.event.inputs.data_5K }},"data_10K",${{ github.event.inputs.data_10K }},"data_15K",${{ github.event.inputs.data_15K }},"data_20K",${{ github.event.inputs.data_20K }},"data_30K",${{ github.event.inputs.data_30K }},"data_100K",${{ github.event.inputs.data_100K }},"data_500K",${{ github.event.inputs.data_500K }},"data_750K",${{ github.event.inputs.data_750K }}
+        run: python main.py --data="data_5K",${{ github.event.inputs.data_5K }},"data_10K",${{ github.event.inputs.data_10K }},"data_15K",${{ github.event.inputs.data_15K }},"data_20K",${{ github.event.inputs.data_20K }},"data_30K",${{ github.event.inputs.data_30K }},"data_100K",${{ github.event.inputs.data_100K }},"data_500K",${{ github.event.inputs.data_500K }},"data_750K",${{ github.event.inputs.data_750K }}
         shell: bash
           
           
