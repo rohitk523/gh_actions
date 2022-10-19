@@ -29,9 +29,10 @@ on:
           - data_500K
           - data_750K
 
-      boolean:
+      data_5k:
         type: boolean
         description: data_5k
+
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
