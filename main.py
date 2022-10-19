@@ -9,7 +9,7 @@ all_lst = args.data[0].split(",")
 
 
 def true_list(lst):
-    res_list = [lst[i] for i in range(0, len(lst), 2)]
+    res_list = [lst[i] for i in range(0, len(lst), 2) if lst[i+1] == 'true']
     return res_list
 
 
